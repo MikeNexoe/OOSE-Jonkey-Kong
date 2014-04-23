@@ -1,13 +1,13 @@
 OOSE-Jonkey-Kong
 ================
-ELEMENTS;
+ELEMENTS
 Protagonist: Junky;
 Enemies: Cops, Pushers, Crack Hoes;
 Object of Interest (OI): Dollars, Pills;
 Buffs: Syringes, Speed;
 Debuffs: Used (AIDS) Syringes; 
 
-MECHANICS;
+MECHANICS
 Sidescroller: camera follows protagonist;
 Movement: jump, sideways, crouch;
 Physics: gravity;
