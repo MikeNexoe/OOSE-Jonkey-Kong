@@ -23,9 +23,9 @@ public class Junky : MonoBehaviour {
 				transform.rigidbody.AddForce (transform.up * jump); 
 		}	
 		if (Input.GetKey (KeyCode.A))
-			transform.position -= new Vector3 (0.075f, 0, 0);
+			transform.position -= new Vector3 (0.065f, 0, 0);
 		if (Input.GetKey (KeyCode.D))
-			transform.position += new Vector3 (0.075f, 0, 0);
+			transform.position += new Vector3 (0.065f, 0, 0);
 		//+= jump * Vector3.up;
 
 	}
