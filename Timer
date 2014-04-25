@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-	public float timer = 30.0f;
+	public float timer;
 
 	// Use this for initialization
 	void Start () {
-	
+		timer = 30.0f;
 	}
 	
 	// Update is called once per frame
