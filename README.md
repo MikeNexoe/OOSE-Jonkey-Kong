@@ -2,7 +2,7 @@ OOSE-Jonkey-Kong
 ================
 ELEMENTS
 Protagonist: Junky;
-Enemies: Cops, Pushers, Crack Hoes;
+Enemies: Cops, Crack Hoes;
 Object of Interest (OI): Dollars, Pills;
 Buffs: Syringes, Speed;
 Debuffs: Used (AIDS) Syringes; 
