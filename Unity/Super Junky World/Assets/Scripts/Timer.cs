@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Timer : MonoBehaviour {
@@ -17,8 +17,8 @@ public class Timer : MonoBehaviour {
 
 		if (timer <= 0) 
 		{
-			timer = 0;
-			//GO TO LOSE
+		Application.LoadLevel("EndMenu");
+			
 		}
 		if (timer >= 999)
 			timer = 999;
