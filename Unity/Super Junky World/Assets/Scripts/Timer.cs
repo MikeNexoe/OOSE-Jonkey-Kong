@@ -32,6 +32,6 @@ public class Timer : MonoBehaviour {
 	void OnCollisionEnter(Collision other)
 	{
 		if (other.gameObject.name == "Speed") 
-			timer += 5;
+			timer += 15;
 	}
 }
