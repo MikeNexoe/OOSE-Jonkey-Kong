@@ -5,7 +5,7 @@ using System.Collections;
 public class EnemyCop : MonoBehaviour {
 
 	
-	public Transform Enemycop;
+	public Transform Spawner;
 	public float spawnTime = 5.0f;
 	
 	private int spawned = 0;
@@ -20,9 +20,13 @@ public class EnemyCop : MonoBehaviour {
 	
 		if (Time.time > spawned * spawnTime){
 			spawned++;
-			Instantiate (Enemycop, transform.position + transform.forward, Quaternion.identity);
+			Instantiate (Spawner, transform.position + transform.forward, Quaternion.identity);
 		}
 	}
-	
+	// Update is called once per frame
+	void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.name == "Junky") 
+			Destroy (gameObject);
+	}
 }
-	
