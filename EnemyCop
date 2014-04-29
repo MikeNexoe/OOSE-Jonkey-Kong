@@ -5,7 +5,7 @@ using System.Collections;
 public class EnemyCop : MonoBehaviour {
 
 	
-	public Transform Spawn;
+	public Transform Enemycop;
 	public float spawnTime = 5.0f;
 	
 	private int spawned = 0;
@@ -18,9 +18,9 @@ public class EnemyCop : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if(Time.time > spawned * spawnTime){
+		if (Time.time > spawned * spawnTime){
 			spawned++;
-			Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
+			Instantiate (Enemycop, transform.position + transform.forward, Quaternion.identity);
 		}
 	}
 	
