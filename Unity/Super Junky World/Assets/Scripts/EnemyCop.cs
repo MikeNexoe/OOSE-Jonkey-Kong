@@ -1,8 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+ // The one who shoots/spawner
 public class EnemyCop : MonoBehaviour {
-	//The one who shoots
+
+	
+	public Transform Spawner;
+	public float spawnTime = 5.0f;
+	
+	private int spawned = 0;
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -11,5 +18,16 @@ public class EnemyCop : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		if (Time.time > spawned * spawnTime){
+			spawned++;
+			Instantiate (Spawner, transform.position + transform.forward, Quaternion.identity);
+		}
+	}
+	// Update is called once per frame
+	void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.name == "Junky") 
+			Destroy (gameObject);
 	}
 }
+	
