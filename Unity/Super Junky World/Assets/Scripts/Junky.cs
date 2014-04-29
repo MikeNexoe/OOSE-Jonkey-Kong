@@ -6,6 +6,7 @@ public class Junky : MonoBehaviour {
 	public float jump;
 	public float speed;
 	public float distToGround;
+	public float score = 0;
 
 	void Start () 
 	{
@@ -35,6 +36,7 @@ public class Junky : MonoBehaviour {
 			transform.position -= new Vector3 (speed, 0, 0);
 		if (Input.GetKey (KeyCode.D))
 			transform.position += new Vector3 (speed, 0, 0);
+		score -= Time.deltaTime;
 	}
 	
 	void OnCollisionEnter(Collision other)
@@ -49,5 +51,11 @@ public class Junky : MonoBehaviour {
 			jump = 400.0f;
 			speed = -0.15f;
 		}
+		if (other.gameObject.name == "Pill") 
+			score += 10;
+	}
+	void OnGUI()
+	{
+		GUI.Box (new Rect (180,10,100,20), "Score: " + score.ToString("0"));
 	}
 }
