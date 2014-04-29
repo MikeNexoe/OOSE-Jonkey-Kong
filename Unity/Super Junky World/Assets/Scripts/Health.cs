@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Health : MonoBehaviour {
@@ -15,7 +15,8 @@ public class Health : MonoBehaviour {
 	{
 		if (health == 0) 
 		{
-			//GO TO LOSE
+		Application.LoadLevel("EndMenu");
+		
 		}
 	}
 
