@@ -1,16 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class LevelChange : MonoBehaviour {
-
+	
 	void OnCollisionEnter(Collision LevelChange) 
 	{
-	
 		if(LevelChange.gameObject.name == "Junky") 
-	
-		Application.LoadLevel("Scene02"); //Destroy(LevelChange.gameObject);
-		
-		
-			}
-		}		
-				
+			Application.LoadLevel("Scene02");
+	}
+}

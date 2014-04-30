@@ -13,7 +13,7 @@ public class Menu : MonoBehaviour {
 		}
 
 		// Make the second button.
-		if (GUI.Button(new Rect(20,70,80,20), "controlls")) {
+		if (GUI.Button(new Rect(20,70,80,20), "Controls")) {
 			Application.LoadLevel("controlls");
 		}
 	}

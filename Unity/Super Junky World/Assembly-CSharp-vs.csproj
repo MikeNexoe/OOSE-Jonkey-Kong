@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\EnemyNoJump.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Junky.cs" />
+     <Compile Include="Assets\Scripts\LevelChange.cs" />
+     <Compile Include="Assets\Scripts\LevelChange2.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Points.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
