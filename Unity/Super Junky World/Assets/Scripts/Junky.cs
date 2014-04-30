@@ -1,5 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
 
 public class Junky : MonoBehaviour {
 
@@ -7,12 +5,14 @@ public class Junky : MonoBehaviour {
 	public float speed;
 	public float distToGround;
 	public float score = 0;
+	
 
 	void Start () 
 	{
 		distToGround = collider.bounds.extents.y;
 		jump = 400.0f;
 		speed = 0.15f;
+		GUI.Box(new Rect(10,10,100,90), Junky);
 	}
 
 	//static bool Raycast(Vector3 )
