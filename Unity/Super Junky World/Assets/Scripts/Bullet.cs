@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		transform.position -= new Vector3 (0.75f, -0.4f, 0.85f);
 	}
 	
 	// Update is called once per frame
@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.name == "Junky") 
+		//if (other.gameObject.name == "Junky") 
 			Destroy (gameObject);
 	}
 }

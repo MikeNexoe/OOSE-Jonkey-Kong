@@ -35,7 +35,8 @@ public class Health : MonoBehaviour {
 			health -= 1.0f;
 		if (other.gameObject.name == "EnemyCop") 
 			health -= 1.0f;
-		if (other.gameObject.name == "Bullet") 
+		if (other.gameObject.tag == "Projectile")
+		//if (other.gameObject.name == "Bullet") 
 			health -= 1.0f;
 	}
 }
