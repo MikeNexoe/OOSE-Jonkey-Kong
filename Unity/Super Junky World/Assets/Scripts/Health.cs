@@ -27,7 +27,13 @@ public class Health : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.name == "Enemy") 
+		if (other.gameObject.name == "EnemyJ") 
+			health -= 1.0f;
+		if (other.gameObject.name == "EnemyNJ") 
+			health -= 1.0f;
+		if (other.gameObject.name == "EnemyCop") 
+			health -= 1.0f;
+		if (other.gameObject.name == "Bullet") 
 			health -= 1.0f;
 	}
 }

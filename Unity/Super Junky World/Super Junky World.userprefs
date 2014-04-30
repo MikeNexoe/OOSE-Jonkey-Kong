@@ -1,13 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Junky.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Camera.cs">
     <Files>
-      <File FileName="Super Junky World.sln" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu.cs" Line="17" Column="34" />
-      <File FileName="Assets\Scripts\EndMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\controlls.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Timer.cs" Line="22" Column="4" />
-      <File FileName="Assets\Scripts\Junky.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\Health.cs" Line="37" Column="19" />
+      <File FileName="Assets\Scripts\Bullet.cs" Line="19" Column="25" />
+      <File FileName="Assets\Scripts\EnemyCop.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Camera.cs" Line="22" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,16 +3,14 @@ using System.Collections;
 
 public class EndMenu : MonoBehaviour
 {	
-void Update ()
-{
-	if (Input.GetKeyDown (KeyCode.Q))
-		Application.Quit();	
-}
+	void Update ()
+	{
+		if (Input.GetKeyDown (KeyCode.Q))
+			Application.Quit();	
+	}
 
-void OnGUI ()
-{
-	GUI.Box(new Rect(10,10,100,90));
-		Application.LoadLevel ("HighScore");
-}
-
+	void OnGUI ()
+	{
+			GUI.Box (new Rect(10,10,190,20), "Highscore: ");
+	}
 }

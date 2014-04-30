@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position -= new Vector3 (0.02f, 0, 0);
+		transform.position -= new Vector3 (0.15f, 0, 0);
 	}
 
 	void OnCollisionEnter(Collision other)
